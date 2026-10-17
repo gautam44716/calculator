@@ -1,0 +1,95 @@
+/* Calculator specific styles */
+
+.calculator {
+  max-width: 360px;
+}
+
+/* ---------- Display ---------- */
+.display {
+  background-color: var(--dark);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  text-align: right;
+  min-height: 96px;
+  overflow: hidden;
+}
+
+.history {
+  min-height: 22px;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.screen {
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--light);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* ---------- Keys ---------- */
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.key {
+  border: none;
+  border-radius: 12px;
+  padding: 16px 0;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: var(--dark);
+  transition: all 0.15s ease;
+}
+
+.key:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+/* Operator keys */
+.key-op {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.key-op:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Clear and delete keys */
+.key-clear {
+  background-color: #f4c9c0;
+  color: #7a2a1b;
+}
+
+.key-clear:hover {
+  background-color: #e8a99c;
+}
+
+/* Zero key takes two columns */
+.key-zero {
+  grid-column: span 2;
+}
+
+/* Equals key */
+.key-equal {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.key-equal:hover {
+  background-color: var(--dark);
+}
